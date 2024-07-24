@@ -1,0 +1,125 @@
+body {
+    background-image: url(./Photos/abstract-black-and-yellow-brush-background-vector.jpg);
+    margin-top: 10px ;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.logo img {
+    width: 100px;
+}
+.navbar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: rgb(255, 213, 0);
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar li {
+    margin-top: 10px;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  }
+.icons img {
+    margin-top: 10px;
+width: 25px;
+height: 25px;
+position: absolute;
+top: 50px;
+  right: 450px;
+}
+.icons2 img {
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}
+.icons3 img {
+  width: 40px;
+}
+.icons3 button {
+  background-color: rgb(255, 213, 0);
+  border: none;
+  cursor: pointer;
+}
+.icons3 button :hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+.num a {
+    color: rgb(252, 216, 38);
+    position: absolute;
+    top: 55px;
+    right: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    border-width: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: white;
+  }
+  P {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0;
+    padding-right: 0px;
+    margin-top: 25px;
+}
+.footer img {
+width: 50px;
+margin-right: 8px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer a {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: fantasy;
+  margin-left: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-color: black;
+}
+.footer a :hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
