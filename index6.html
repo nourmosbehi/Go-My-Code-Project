@@ -7,6 +7,122 @@
     <link rel="icon" type="x-icon" href="./Photos/Title Logo.png">
 </head>
 <body>
-    
+    <style>
+    body {
+        background-color: rgb(255, 213, 0);
+    }
+    i {
+        color: rgb(195, 0, 0);
+        font-family: monospace;
+        }
+        .two h1 {
+            border-bottom: 2px solid black;
+            color: black;
+            font-family: sans-serif;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        .images img {
+            width: 250px;
+            height: 250px;
+            margin-right: 30px;
+            margin-top: 85px;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.867);
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            border:  3px solid black;
+            cursor: pointer;
+            background-color: black;
+            margin-top: 40px;
+            border: 2px solid white;
+        }
+        .images {
+            display: flex;
+justify-content: space-around;
+align-items: center;
+        }
+
+    .name {
+        display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: 50px;
+margin-right: 120px;
+    }
+    .name h3 {
+        border-bottom: 3px solid white;
+    }
+    .pric {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color:rgb(195, 0, 0) ;
+        margin-left: 100px;
+        margin-right: 170px;
+        font-family: monospace;
+    }
+    .pric h2 {
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+    .buttom  {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .buttom input {
+        color: rgb(255, 213, 0);
+        background-color: black;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 120px;
+        border-radius: 10px;
+        border-color: white;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.862);
+        width: 150px;
+        height: 40px;
+    }
+    .logo {
+        width: 150px;
+    }
+</style>
+    <center>
+        <h1><i>today special</i></h1>
+        <div class="two">
+        <h1>FESTIVE SEASON OFFERS</h1> 
+        <div class="logo">   
+        <a href="./index.html"><img class="logo" src="./Photos/Logo.png" alt="logo"></a>
+        </div>
+    </div>
+    <div class="images">
+        <img src="./Photos/jus 1.png" alt="pizza 1">
+        <img src="./Photos/jus 2.png" alt="pizza 2">
+        <img src="./Photos/jus 3.png" alt="pizza 3">
+        <img src="./Photos/jus 4.png" alt="pizza 4">
+    </div>
+    <br>
+    <div class="name">
+        <h3>MELON WATER JUS</h3>
+        <h3>ORANGE JUS</h3>
+        <h3>LEMONADE JUS</h3>
+        <h3>BLUE LAGOON JUS</h3>
+    </div>
+    <br>
+    <div class="pric">
+        <h2>6.500 DT</h2>
+        <h2>5.00 DT</h2>
+        <h2>3.500 DT</h2>
+        <h2>8.00 DT</h2>
+    </div>
+    <br>
+    <div class="buttom">
+        <label for="buttom"></label>
+        <input type="button" value="ADD TO CART">
+        <input type="button" value="ADD TO CART">
+        <input type="button" value="ADD TO CART">
+        <input type="button" value="ADD TO CART">
+    </div>
+    <br>
+    </center>
 </body>
 </html>

@@ -7,6 +7,168 @@
     <link rel="icon" type="x-icon" href="./Photos/Title Logo.png">
 </head>
 <body>
-    
+    <div class="darkmode">
+    <button><img src="./Photos/mode-nuit (2).png " id="icon"></button>
+</div>
+    <style>
+        .dark-theme img {
+            background-color: var(--three-color);
+        }
+        body {
+            background-color: var(--primary-color);
+        }
+        :root {
+            --primary-color: #fcd826;
+            --secondary-color:#000000 ;
+            --three-color:#ffffff ; 
+
+        }
+        .dark-theme {
+            --primary-color: #000000 ;
+            --secondary-color: #ffffff ;
+            --three-color: #ffffff ;
+        }
+        
+.darkmode img {
+    width: 25px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.darkmode button {
+    background-color:var(--primary-color);
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+}
+        i {
+            color: rgb(195, 0, 0);
+            font-family: monospace;
+            }
+            .two h1 {
+                border-bottom: 2px solid black;
+                color: var(--three-color);
+                font-family: sans-serif;
+                margin-left: 400px;
+                margin-right: 400px;
+            }
+            .two img {
+                color: var(--three-color);
+            }
+            .images img {
+                width: 310px;
+                height: 310px;
+                margin-right: 30px;
+                margin-top: 85px;
+                box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.867);
+                background-color: var(--three-color);
+                border-radius: 15px;
+                border:  3px solid black;
+                cursor: pointer;
+                background-color: var(--secondary-color);
+                margin-top: 40px;
+                border: 2px solid var(--three-color);
+            }
+            .images {
+                display: flex;
+    justify-content: space-around;
+    align-items: center;
+            }
+
+        .name {
+            display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 120px;
+        }
+        .name h3 {
+            border-bottom: 3px solid var(--three-color);
+            color: var(--three-color);
+        }
+        .pric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:rgb(195, 0, 0) ;
+            margin-left: 150px;
+            margin-right: 170px;
+            font-family: monospace;
+        }
+        .pric h2 {
+            background-color: var(--three-color);
+            border-radius: 10px;
+        }
+        .buttom  {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .buttom input {
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+            cursor: pointer;
+            margin-left: 20px;
+            margin-right: 120px;
+            border-radius: 10px;
+            border-color: var(three-color);
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.862);
+            width: 150px;
+            height: 40px;
+        }
+        .logo {
+            width: 150px;
+            border-radius: 15px;
+        }
+        .
+    </style>
+    <center>
+    <h1><i>today special</i></h1>
+    <div class="two">
+    <h1>FESTIVE SEASON OFFERS</h1>
+    <a href="./index.html"><img class="logo" src="./Photos/Logo.png" alt="logo"></a>
+</div>
+<div class="images">
+    <img src="./Photos/Bottle_Humidifier-removebg-preview.png" alt="pizza 1">
+    <img src="./Photos/pizza 4 fromages.png" alt="pizza 2">
+    <img src="./Photos/Vegetarian Pizza.png" alt="pizza 3">
+    <img src="./Photos/pizza_pepperoni-removebg-preview.png" alt="pizza 4">
+</div>
+<br>
+<div class="name">
+    <h3>PIZZA BOTTLE HUMIDIFIER </h3>
+    <h3>PIZZA 4 CHEESE</h3>
+    <h3>PIZZA VEGETRAIAN </h3>
+    <h3>PIZZA PEPPERONI</h3>
+</div>
+<br>
+<div class="pric">
+    <h2>30.00 DT</h2>
+    <h2>15.00 DT</h2>
+    <h2>20.00 DT</h2>
+    <h2>25.00 DT</h2>
+</div>
+<br>
+<div class="buttom">
+    <label for="buttom"></label>
+    <input type="button" value="ADD TO CART">
+    <input type="button" value="ADD TO CART">
+    <input type="button" value="ADD TO CART">
+    <input type="button" value="ADD TO CART">
+</div>
+<br>
+</center>
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function (){
+        document.body.classList.toggle("dark-theme")
+        if(doucument.body.classList.contains("dark-theme")) {
+            icon.src = "./Photos/mode -jour.png";
+        } else {
+            icon.src="./Photos/mode-jour " ;
+        }
+    }
+</script>
 </body>
 </html>

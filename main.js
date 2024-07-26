@@ -1,1 +1,31 @@
-console.log("hello world")
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+	</script>
+let qrContentInput = document.getElementById("qr-content");
+	let qrGenerationForm = 
+	document.getElementById("qr-generation-form");
+	let qrCode;
+	
+	function generateQrCode(qrContent) {
+	return new QRCode("qr-code", {
+		text: qrContent,
+		width: 256,
+		height: 256,
+		colorDark: "#000000",
+		colorLight: "#ffffff",
+		correctLevel: QRCode.CorrectLevel.H,
+	});
+	}
+	
+	qrGenerationForm.addEventListener("submit", function (event) {
+
+	event.preventDefault();
+	let qrContent = qrContentInput.value;
+	if (qrCode == null) {
+
+		qrCode = generateQrCode(qrContent);
+	} else {
+		
+		qrCode.makeCode(qrContent);
+	}
+	});
