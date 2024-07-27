@@ -1,6 +1,4 @@
-<script src=
-"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
-	</script>
+
 let qrContentInput = document.getElementById("qr-content");
 	let qrGenerationForm = 
 	document.getElementById("qr-generation-form");
